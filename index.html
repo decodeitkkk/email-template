@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Frame 1</title>
+    <title>Weekly Report</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="frame1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -15,9 +17,26 @@
             padding: 0px;
         }
 
+        .i_400 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
 
+        }
 
+        .i_500 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+        }
 
+        .i_600 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .i_700 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
 
         /*---------------------------------< WELCOME SECTION >--------------------------------------*/
         .head {
@@ -108,6 +127,13 @@
 
             line-height: normal;
         }
+
+
+        /*----------------------------------< FOOTER STYLE >-----------------------------------*/
+        footer {
+            /* width: 566px; */
+            min-height: 175px;
+        }
     </style>
 </head>
 
@@ -118,8 +144,8 @@
         <div class="container  ">
             <div class="row d-flex justify-content-center ">
                 <div class="col-1 d-flex justify-content-center ">
-                    <img src="assets/Group 42.png" style="min-width: 135px; padding-top: 44px; "
-                        class="w-100 object-fit-contain " alt="">
+                    <img src="https://raw.githubusercontent.com/decodeitkkk/email-template/main/assets/Group%2042.png"
+                        style="min-width: 135px; padding-top: 44px; " class="w-100 object-fit-contain " alt="">
                 </div>
             </div>
             <div class="head text-capitalize i_700 ">
@@ -137,7 +163,7 @@
     </section>
 
     <!----------------------------------< VISITOR SUMMARY SECTION  >----------------------------------->
-    <section class="visitor-summary py-5 container-fluid ">
+    <section class=" border-bottom visitor-summary py-5 container-fluid ">
         <div class="section_heading i_700 py-5 ps-4 ">
             Visitor Summary
         </div>
@@ -150,7 +176,7 @@
     </section>
 
     <!----------------------------------< VISITOR'S LOCATION SECTION  >----------------------------------->
-    <section class="visitor's location py-5 container-fluid border-bottom  ">
+    <section class=" border-bottom visitor's location py-5 container-fluid border-bottom  ">
         <div class="section_heading i_700 py-5 ps-4 ">
             Top Visitors Location
         </div>
@@ -398,7 +424,7 @@
     </section>
 
     <!----------------------------------< MOST DEVICES USED SECTION  >----------------------------------->
-    <section class="devices-used py-5 container-fluid ">
+    <section class=" border-bottom devices-used py-5 container-fluid ">
         <div class="section_heading i_700 py-5 ps-4 ">
             Most Used Devices
         </div>
@@ -455,16 +481,15 @@
 
     </section>
 
-    <!-- <section class="visitor-summary py-5 container-fluid ">
+    <section class=" border-bottom visitor-summary py-5 container-fluid ">
         <div class="section_heading i_700 py-5 ps-4 ">
             Most Visited Page
         </div>
-        <div class="container d-flex justify-content-center ">
+        <div class="container  ">
             <div class="border border-dark rounded-5 p-5 ">
-                <div class="row d-flex align-items-baseline flex-wrap justify-content-center ">
-                    <div class="col-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-75 object-fit-contain " viewBox="0 0 22 25"
-                            fill="none">
+                <div class="row d-flex align-items-center justify-content-center  ">
+                    <div class="col-2 col-sm-1 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="  " width="24px" viewBox="0 0 22 25" fill="none">
                             <circle cx="10.75" cy="12.7502" r="8.16667" stroke="black" stroke-width="2.04167" />
                             <ellipse cx="10.75" cy="12.7502" rx="3.0625" ry="8.16667" stroke="black"
                                 stroke-width="2.04167" />
@@ -473,11 +498,11 @@
                         </svg>
                     </div>
                     <div class="col-8">
-                        <a
-                            href="#">https://www.theplushclub.com/en-my/products/signature-half-sleeves-zippie-baby-pink?variant=39329768669384</a>
+                        <a href="#" class="i_600 "
+                            style="font-size: 10px;">https://www.theplushclub.com/en-my/products/signature-half-sleeves-zippie-baby-pink?variant=39329768669384</a>
                     </div>
-                    <div class="col-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <div class="col-2 col-sm-1 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M21 3V2H22V3H21ZM11.7071 13.7071C11.3166 14.0976 10.6834 14.0976 10.2929 13.7071C9.90237 13.3166 9.90237 12.6834 10.2929 12.2929L11.7071 13.7071ZM20 11V3H22V11H20ZM21 4H13V2H21V4ZM21.7071 3.70711L11.7071 13.7071L10.2929 12.2929L20.2929 2.29289L21.7071 3.70711Z"
                                 fill="#0047AB" />
@@ -494,10 +519,10 @@
 
 
         </div>
-    </section> -->
+    </section>
 
     <!----------------------------------< PAGES USED SECTION  >----------------------------------->
-    <section class="pages-used py-5 container-fluid ">
+    <section class=" border-bottom pages-used py-5 container-fluid ">
         <div class="section_heading i_700 py-5 ps-4 ">
             Page Used
         </div>
@@ -512,7 +537,7 @@
 
     <!----------------------------------< DEAR CUSTOMER SECTION  >----------------------------------->
     <section class=" py-5 container-fluid ">
-        <div class="container">
+        <div class="container pt-5 ">
             <div class=" text-center px-5 ">
                 Dear Customer, <br>
                 As a valued user, take your experience to the next level by upgrading to our VIP Subscription Plan. With
